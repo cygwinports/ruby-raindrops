@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-raindrops"
-VERSION=0.10.0
+VERSION=0.11.0
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby Rack statistics extension"
