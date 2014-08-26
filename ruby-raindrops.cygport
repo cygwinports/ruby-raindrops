@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-raindrops"
-VERSION=0.11.0
+VERSION=0.13.0
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby Rack statistics extension"
@@ -10,3 +10,8 @@ HTTP servers. It is designed for preforking servers such as Rainbows! and
 Unicorn, but should support any Rack HTTP server under Ruby 1.9, 1.8 and
 Rubinius on platforms supporting POSIX shared memory. It may also be used as a
 generic scoreboard for sharing atomic counters across multiple processes."
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_raindrops_CONTENTS="--exclude=examples ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_raindrops_doc_CONTENTS="${RUBYGEM_DOCDIR#/} ${RUBYGEM_INSTDIR#/}/examples/"
+
