@@ -1,8 +1,8 @@
 inherit rubygem
 
 NAME="ruby-raindrops"
-VERSION=0.13.0
-RELEASE=2
+VERSION=0.17.0
+RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby Rack statistics extension"
 DESCRIPTION="Raindrops is a real-time stats toolkit to show statistics for Rack
